@@ -7,7 +7,6 @@ jobs:
     - image: circleci/golang:1.12.6
     steps:
       - checkout
-      - run: make bootstrap build-js
       - setup_remote_docker:
           docker_layer_caching: false # :(
       - run:
