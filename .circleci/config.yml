@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: make bootstrap build-js
       - setup_remote_docker:
-          docker_layer_caching: true
+          docker_layer_caching: false # :(
       - run:
           name: Docker Build
           command: make docker
