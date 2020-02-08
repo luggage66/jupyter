@@ -18,6 +18,8 @@ jobs:
           name: Docker Build
           command: make docker
 
+      - run: make docker-push
+
 # Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
 workflows:
   Build:
