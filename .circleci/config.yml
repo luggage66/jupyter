@@ -3,7 +3,6 @@ version: 2.1
 
 jobs:
   build:
-    context: luggage66.com
     docker:
     - image: circleci/golang:1.12.6
       auth:
@@ -21,4 +20,5 @@ jobs:
 workflows:
   Build:
     jobs:
-    - build
+    - build:
+        context: luggage66.com
